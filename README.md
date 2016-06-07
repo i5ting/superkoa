@@ -33,3 +33,9 @@ with watch mode
 ```
 npm test -- -w 
 ```
+
+
+## Document
+
+see http://visionmedia.github.io/superagent/
+
