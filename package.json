@@ -1,0 +1,27 @@
+{
+  "name": "superkoa",
+  "version": "1.0.0",
+  "description": "koa with supertest for ava or mocha",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/ava -v"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/i5ting/superkoa.git"
+  },
+  "author": "i5ting",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/i5ting/superkoa/issues"
+  },
+  "homepage": "https://github.com/i5ting/superkoa#readme",
+  "dependencies": {
+    "debug": "^2.2.0",
+    "supertest": "^1.2.0"
+  },
+  "devDependencies": {
+    "ava": "^0.15.2",
+    "koa": "^2.0.0"
+  }
+}
