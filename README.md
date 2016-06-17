@@ -4,6 +4,8 @@ koa with [supertest](https://github.com/visionmedia/supertest) for [ava](https:/
 
 [![npm version](https://badge.fury.io/js/superkoa.svg)](http://badge.fury.io/js/superkoa)
 [![Build](https://travis-ci.org/i5ting/superkoa.svg?branch=master)](https://travis-ci.org/i5ting/superkoa)
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
+
 
 ## Usages
 
