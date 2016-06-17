@@ -24,17 +24,17 @@ test.cb("superkoa()", t => {
 });
 ```
 
-with yield
+with generator
 
 ```
-// *  GET    /users[/]        => user.list()
-test('GET /' + model, function * (t) {
-  var res = yield superkoa('../../app.js')
-    .get('/' + model)
+test('yield superkoa()', function * (t) {
+  let res = yield superkoa('./app')
+    .get('/')
 
   t.is(200, res.status)
-  t.regex(res.text, /table/g)
+  t.is(res.text, 'Hello Koa', 'res.text == Hello Koa')
 })
+
 ```
 
 ## Test
