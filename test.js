@@ -1,15 +1,21 @@
-import test from 'ava';
+import test from 'ava'
 
 var superkoa = require('.')
 
-test.cb("superkoa()", t => {
+test.cb('superkoa()', t => {
   superkoa('./app')
-    .get("/")
+    .get('/')
     .expect(200, function (err, res) {
-      
       t.ifError(err)
-      var userId = res.body.id;
       t.is(res.text, 'Hello Koa', 'res.text == Hello Koa')
       t.end()
-    });
-});
+    })
+})
+
+test('yield superkoa()', function * (t) {
+  let res = yield superkoa('./app')
+    .get('/')
+
+  t.is(200, res.status)
+  t.is(res.text, 'Hello Koa', 'res.text == Hello Koa')
+})
