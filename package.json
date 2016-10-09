@@ -1,6 +1,6 @@
 {
   "name": "superkoa",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "koa with supertest for ava or mocha",
   "main": "index.js",
   "scripts": {
