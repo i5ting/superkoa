@@ -19,3 +19,11 @@ test('yield superkoa()', function * (t) {
   t.is(200, res.status)
   t.is(res.text, 'Hello Koa', 'res.text == Hello Koa')
 })
+
+test('async superkoa()', async (t) => {
+  let res = await superkoa('./app')
+    .get('/')
+
+  t.is(200, res.status)
+  t.is(res.text, 'Hello Koa', 'res.text == Hello Koa')
+})

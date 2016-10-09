@@ -4,7 +4,7 @@
   "description": "koa with supertest for ava or mocha",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/standard && ./node_modules/.bin/ava -v"
+    "test": "./node_modules/.bin/ava -v"
   },
   "repository": {
     "type": "git",
