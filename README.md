@@ -10,10 +10,11 @@ koa with [supertest](https://github.com/visionmedia/supertest) for [ava](https:/
 ## Usages
 
 ```
-var superkoa = require('superkoa')
+import app from './app'
+import superkoa from './superkoa'
 
 test.cb("superkoa()", t => {
-  superkoa('./koa.app.js')
+  superkoa(app)
     .get("/")
     .expect(200, function (err, res) {
       t.ifError(err)
@@ -28,7 +29,7 @@ with generator
 
 ```
 test('yield superkoa()', function * (t) {
-  let res = yield superkoa('./app')
+  let res = yield superkoa(app)
     .get('/')
 
   t.is(200, res.status)
@@ -40,7 +41,7 @@ with async/await
 
 ```
 test('async superkoa()', async (t) => {
-  let res = await superkoa('./app')
+  let res = await superkoa(app)
     .get('/')
 
   t.is(200, res.status)
